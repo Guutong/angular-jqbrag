@@ -37,10 +37,29 @@ import { Component, Input } from '@angular/core';
       border: 1px solid #B7C876;
     }
 
+    // .custom-checkbox input:checked + span:before {
+    //   content: "✔";
+    //   font-size: 1em;
+    //   color: #B7C876;
+    // }
+
     .custom-checkbox input:checked + span:before {
-      content: "✔";
-      font-size: 1em;
-      color: #B7C876;
+      content: "";
+      position: relative;
+      top: -2px;
+      left: -7px;
+      width: 6px;
+      height: 15px;
+      border-top: 2px solid transparent;
+      border-left: 2px solid transparent;
+      border-right: 2px solid #B7C876;
+      border-bottom: 2px solid #B7C876;
+      transform: rotate(40deg);
+      backface-visibility: hidden;
+      transform-origin: 100% 100%;
+      -webkit-transform-origin: 100% 100%;
+      -webkit-backface-visibility: hidden;
+      -webkit-transform: rotate(40deg);
     }
     `
   ]
