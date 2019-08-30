@@ -10,6 +10,13 @@ import { Component, Input } from '@angular/core';
   `,
   styles: [
     `
+    .custom-checkbox {
+      padding: 1px;
+      display: block;
+      width: 35px;
+      height: 35px;
+    }
+
     .custom-checkbox input {
       display: none;
     }
